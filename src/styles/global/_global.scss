@@ -1,0 +1,32 @@
+*,
+*::before,
+*::after {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	// background-color: black;
+}
+
+.App {
+	height: 100svh;
+	&.dark {
+		background-color: black;
+		h1 {
+			color: white;
+		}
+	}
+
+	&.light {
+		background-color: gainsboro;
+		h1 {
+			color: black;
+		}
+	}
+}
